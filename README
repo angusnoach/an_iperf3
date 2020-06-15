@@ -1,1 +1,35 @@
 iperf3 Server for Network Bandwidth Testing using Docker
+
+
+Quick start
+===========
+
+01. At shell, create a folder which will be the name of the container by default:
+    mkdir {myfolder}
+02. Download all files from github:
+    git clone https://github.com/angusnoach/an_iperf3
+03. Add execution mode to the file:
+		chmod u+x dockerrun.sh
+04. Executing with default settings:
+		./dockerrun.sh -d
+
+Information
+===========
+
+- A container with running iperf3 server mode for testing network bandwidth
+- Default container name: current folder name
+- Default port: 5201/tcp and 5201/udp
+- A subfolder 'data' is created for saving info and log
+- Launch an iperf3 client at another machine:
+  iperf3 -c {IP_OF_RUNING_IPERF3_CONTAINER}
+- Inspect the result:
+	cat ./data/iperf3.log
+- Follow the logs:
+	tail -f ./data/iperf3.log
+- Show versions of system running in the container:
+  cat ./data/version.txt
+
+Change Logs
+===========
+
+2006.06: first build
