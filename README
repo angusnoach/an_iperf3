@@ -9,9 +9,9 @@ Quick start
 02. Download all files from github:
     git clone https://github.com/angusnoach/an_iperf3
 03. Add execution mode to the file:
-		chmod u+x dockerrun.sh
+    chmod u+x dockerrun.sh
 04. Executing with default settings:
-		./dockerrun.sh -d
+    ./dockerrun.sh -d
 
 Information
 ===========
