@@ -23,9 +23,9 @@ Information
 - Launch an iperf3 client at another machine:
   iperf3 -c {IP_OF_RUNING_IPERF3_CONTAINER}
 - Inspect the result:
-	cat ./data/iperf3.log
+  cat ./data/iperf3.log
 - Follow the logs:
-	tail -f ./data/iperf3.log
+  tail -f ./data/iperf3.log
 - Show versions of system running in the container:
   cat ./data/version.txt
 
